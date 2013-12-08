@@ -1,5 +1,7 @@
 require 'test_helper'
 
+should have_many(:user_friendships)
+
 class UserTest < ActiveSupport::TestCase
   test "a user should enter a first name" do
     user = User.new
